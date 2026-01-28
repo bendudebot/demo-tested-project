@@ -1,0 +1,17 @@
+{
+  "name": "demo-tested-project",
+  "version": "1.0.0",
+  "description": "Projet démo avec tests complets - créé par Bendudebot",
+  "main": "src/utils.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "keywords": ["utils", "demo", "tested"],
+  "author": "Bendudebot",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
