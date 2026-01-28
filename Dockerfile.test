@@ -1,0 +1,16 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install all dependencies (including devDependencies for tests)
+RUN npm ci
+
+# Copy source and tests
+COPY src/ ./src/
+COPY tests/ ./tests/
+
+# Run tests with coverage
+CMD ["npm", "run", "test:coverage"]

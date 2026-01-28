@@ -50,6 +50,19 @@ npm run test:watch
 | `isPalindrome(str)` | Vérifie si c'est un palindrome |
 | `slugify(str)` | Génère un slug URL-friendly |
 
+## Docker
+
+```bash
+# Build et run
+docker compose up app
+
+# Lancer les tests dans Docker
+docker compose --profile test up test
+
+# Mode dev avec watch
+docker compose --profile dev up dev
+```
+
 ## License
 
 MIT - Créé par Bendudebot 🤖
